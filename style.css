@@ -1,0 +1,154 @@
+/* Global Reset & Theme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 80% 20%, #1a3c30 0%, #0b1116 100%);
+    padding: 20px;
+}
+
+.auth-wrapper {
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+}
+
+/* Card Styling */
+.auth-card {
+    background: #ffffff;
+    width: 100%;
+    padding: 40px 30px;
+    border-radius: 28px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Visibility Control Utility */
+.hidden {
+    display: none !important;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #111111;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Shared Groups */
+.input-group {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.input-group input {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+/* Login-Specific Inputs */
+#loginCard .input-group input {
+    padding: 16px 24px;
+    background-color: #c4c4c4;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: #222;
+}
+#loginCard .input-group input::placeholder { color: #555; }
+
+/* Signup-Specific Inputs */
+#signupCard .input-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+#signupCard input {
+    padding: 14px 20px;
+    background-color: #f0f0f0;
+    border-radius: 14px;
+    font-size: 0.95rem;
+}
+#signupCard .input-row input {
+    width: 50%;
+}
+
+/* Interactive Elements (Password Toggles) */
+.password-wrapper {
+    display: flex;
+    align-items: center;
+}
+.toggle-eye {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    user-select: none;
+    opacity: 0.5;
+}
+
+/* Rows and Options */
+.options-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    padding: 0 5px;
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    cursor: pointer;
+}
+.remember-me input { accent-color: #e65c00; }
+.forgot-pass { color: #3b3b98; text-decoration: none; }
+.forgot-pass:hover { text-decoration: underline; }
+
+/* Google Button Framework Layout Placement */
+#googleBtnContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.divider {
+    color: #888;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+/* Interactive Control Elements */
+.btn {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.login-btn { background: #e65c00; }
+.login-btn:hover { background: #cc5200; }
+
+.create-btn { background: #000000; margin-top: 10px;}
+.create-btn:hover { background: #222222; }
+
+/* Footer Elements */
+.footer-text { margin-top: 25px; font-size: 0.95rem; color: #333; }
+.link-switch { color: #3b3b98; text-decoration: none; font-weight: 700; }
+.spec-link { text-decoration: underline; }
+.link-switch:hover { text-decoration: underline; }
